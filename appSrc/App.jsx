@@ -1,6 +1,6 @@
-import React from 'react';
+var React = require('react');
 
-class App extends React.Component {
+module.exports = React.createClass({
    render() {
       return (
          <div>
@@ -8,7 +8,8 @@ class App extends React.Component {
          </div>
       );
    }
-}
+});
+
 var Txt = React.createClass({
 	render:function(){
 		return(
@@ -17,6 +18,4 @@ var Txt = React.createClass({
 		</div>
 		)
 	}
-})
-
-export default App;
+});

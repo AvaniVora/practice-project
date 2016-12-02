@@ -4,11 +4,14 @@
   "description": "Basic Hello World App",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot",
+    "build": "browserify -t [ babelify --presets [ react ] ] C:/Users/O640461/Desktop/reactApp/practice-project/main.js -o index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },
